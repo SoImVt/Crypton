@@ -1,0 +1,181 @@
+<?xml version="1.0"?>
+<SyntaxDefinition name = "Lua"
+                  extensions = ".lua">
+  <Properties>
+    <Property name="LineComment"
+              value="--"/>
+  </Properties>
+
+  <Digits name = "Digits" bold = "false" italic = "false" color = "#F99157"/>
+
+  <RuleSets>
+    <RuleSet ignorecase="false">
+      <Delimiters>~@$%^&amp;*()+=|\[]{};"'&lt;&gt; ,#:	</Delimiters>
+
+      <Span name = "BlockComment" bold = "false" italic = "false" color = "#999999" stopateol = "false">
+        <Begin>--[[</Begin>
+        <End>]]</End>
+      </Span>
+      <Span name = "BlockCommentTwo" bold = "false" italic = "false" color = "#999999" stopateol = "false">
+        <Begin>[=[</Begin>
+        <End>]=]</End>
+      </Span>
+
+      <Span name = "LineComment" bold = "false" italic = "false" color = "#999999" stopateol = "true">
+        <Begin>--</Begin>
+      </Span>
+
+      <Span name="FirstString" color="#99CC99" stopateol="true" bold="false" italic="false">
+        <Begin>"</Begin>
+        <End>"</End>
+      </Span>
+	  
+	  <Span name="SecondString" color="#99CC99" stopateol="true" bold="false" italic="false">
+        <Begin>'</Begin>
+        <End>'</End>
+      </Span>
+
+      <KeyWords name="Punctuation" bold="false" italic="false" color="#66CCCC">
+	  <Key word = "#" />
+	  	  <Key word = "%" />
+	  <Key word = "^" />
+	  <Key word = "*" />
+	  <Key word = "+" />
+	  <Key word = "-" />
+	  <Key word = "/" />
+	  <Key word = ".." />
+	  </KeyWords>
+    <KeyWords name="KeyWords" bold="false" italic="false" color="#CC99CC">
+<Key word="while"/>
+<Key word="or"/>
+<Key word="then"/>
+<Key word="and"/>
+<Key word="do"/>
+<Key word="end"/>
+<Key word="elseif"/>
+<Key word="if"/>
+<Key word="for"/>
+<Key word="in"/>
+<Key word="foreach"/>
+<Key word="return"/>
+<Key word="not"/>
+<Key word="local"/>
+<Key word="gcinfo"/>
+<Key word="function"/>
+    </KeyWords>
+        <KeyWords name="Tables" bold="false" italic="false" color="#F99157">
+<Key word="string"/>
+<Key word="os"/>
+<Key word="io"/>
+<Key word="math"/>
+<Key word="debug"/>
+<Key word="table"/>
+<Key word="coroutine"/>
+<Key word="_G"/>
+<Key word="uf8"/>
+<Key word="bit"/>
+<Key word="shared"/>
+<Key word="syn"/>
+<Key word="Drawing"/>
+<Key word="game"/>
+<Key word="Game"/>
+<Key word="Instance"/>
+    </KeyWords>
+             <KeyWords name="Functions" bold="false" italic="false" color="#6699CC">
+<Key word="xpcall"/>
+<Key word="tostring"/>
+<Key word="print"/>
+<Key word="unpack"/>
+<Key word="require"/>
+<Key word="getfenv"/>
+<Key word="script"/>
+<Key word="hookmetamethod"/>
+<Key word="getrawmetatable"/>
+<Key word="setreadonly"/>
+<Key word="newcclosure"/>
+<Key word="isreadonly"/>
+<Key word="warn"/>
+<Key word="checkcaller"/>
+<Key word="getnamecallmethod"/>
+<Key word="hookfunction"/>
+<Key word="writefile"/>
+<Key word="appendfile"/>
+<Key word="readfile"/>
+<Key word="isfile"/>
+<Key word="makefolder"/>
+<Key word="delfolder"/>
+<Key word="isfolder"/>
+<Key word="getgenv"/>
+<Key word="getrenv"/>
+<Key word="getreg"/>
+<Key word="getgc"/>
+<Key word="getinstances"/>
+<Key word="getnilinstances"/>
+<Key word="getscripts"/>
+<Key word="getloadedmodules"/>
+<Key word="getconnections"/>
+<Key word="firesignal"/>
+<Key word="fireclickdetector"/>
+<Key word="fireproximityprompt"/>
+<Key word="firetouchinterest"/>
+<Key word="isnetworkowner"/>
+<Key word="gethiddenproperty"/>
+<Key word="sethiddenproperty"/>
+<Key word="setsimulationradius"/>
+<Key word="getsenv"/>
+<Key word="getcallingscript"/>
+<Key word="getscriptclosure"/>
+<Key word="getscripthash"/>
+<Key word="setrawmetatable"/>
+<Key word="iswindowactive"/>
+<Key word="keypress"/>
+<Key word="keyrelease"/>
+<Key word="mouse1click"/>
+<Key word="mouse1press"/>
+<Key word="mouse1release"/>
+<Key word="mouse2click"/>
+<Key word="mouse2press"/>
+<Key word="mouse2release"/>
+<Key word="mousescroll"/>
+<Key word="mousemoverel"/>
+<Key word="mousemoveabs"/>
+<Key word="islclosure"/>
+<Key word="dumpstring"/>
+<Key word="decompile"/>
+<Key word="loadfile"/>
+<Key word="listfiles"/>
+<Key word="delfile"/>
+<Key word="setclipboard"/>
+<Key word="setfflag"/>
+<Key word="setnamecallmethod"/>
+<Key word="getsynasset"/>
+<Key word="getspecialinfo"/>
+<Key word="saveinstance"/>
+<Key word="messagebox"/>
+<Key word="setmetatable"/>
+<Key word="next"/>
+<Key word="assert"/>
+<Key word="tonumber"/>
+<Key word="rawequal"/>
+<Key word="collectgarbage"/>
+<Key word="getmetatable"/>
+<Key word="module"/>
+<Key word="rawset"/>
+<Key word="pcall"/>
+<Key word="newproxy"/>
+<Key word="type"/>
+<Key word="select"/>
+<Key word="pairs"/>
+<Key word="rawget"/>
+<Key word="loadstring"/>
+<Key word="ipairs"/>
+<Key word="dofile"/>
+<Key word="setfenv"/>
+<Key word="load"/>
+<Key word="error"/>
+<Key word="loadfile"/>
+    </KeyWords>
+      
+    </RuleSet>
+  </RuleSets>
+</SyntaxDefinition>
